@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>AMG-Sentinel - Hoja de Vida PDF</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header>
+    <h1>Vista Previa: Hoja de Vida de Activo TI</h1>
+    <nav>
+      <button onclick="window.print();" class="btn">🖨️ Imprimir / Guardar PDF</button>
+      <a href="inventario.html" class="btn btn-secondary">Volver</a>
+    </nav>
+  </header>
+
+  <div class="container" style="display: flex; justify-content: center;">
+    <div class="card" style="background: white; color: #1e293b; width: 750px; min-height: 900px; padding: 2.5rem; position: relative;">
+      
+      <div style="display: flex; justify-content: space-between; border-bottom: 2px solid #0f172a; padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <div>
+          <h2 style="color: #0f172a; font-size: 1.3rem;">INSTITUCIÓN UNIVERSITARIA DIGITAL DE ANTIOQUIA</h2>
+          <p style="font-size: 0.85rem; color: #475569;">Sistema AMG-Sentinel | Ficha Técnica Oficial de Activo</p>
+        </div>
+        <div style="text-align: right; font-weight: bold; color: #2563eb;">HOJA DE VIDA<br><span style="font-size: 0.8rem; color: #64748b;">PDF GENERADO</span></div>
+      </div>
+
+      <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: #1e293b;">1. Especificaciones del Equipo</h3>
+      <table style="color: #1e293b; margin-bottom: 2rem;">
+        <tr><th style="background: #f1f5f9; color: #334155;">Serial:</th><td>SR-88492</td><th style="background: #f1f5f9; color: #334155;">Categoría:</th><td>Laptop</td></tr>
+        <tr><th style="background: #f1f5f9; color: #334155;">Marca/Modelo:</th><td>HP ProBook 440 G8</td><th style="background: #f1f5f9; color: #334155;">Custodio:</th><td>Alvaro Muñoz</td></tr>
+        <tr><th style="background: #f1f5f9; color: #334155;">Procesador:</th><td>Intel Core i5 11va Gen</td><th style="background: #f1f5f9; color: #334155;">RAM / Disco:</th><td>16 GB / 512 GB SSD</td></tr>
+      </table>
+
+      <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: #1e293b;">2. Historial Resumido de Mantenimientos</h3>
+      <p style="font-size: 0.85rem; color: #475569; margin-bottom: 3rem;">• 15/09/2026: Mantenimiento preventivo general y limpieza de disipador. Técnico: Alvaro Muñoz.</p>
+
+      <!-- Código QR Simulado -->
+      <div style="position: absolute; bottom: 2.5rem; right: 2.5rem; text-align: center;">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=110x110&data=AMG-SENTINEL-ACTIVO-SR88492" alt="Código QR Activo" style="border: 1px solid #cbd5e1; padding: 4px;">
+        <p style="font-size: 0.65rem; color: #64748b; margin-top: 0.3rem;">Escanee para validar la ficha técnica</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

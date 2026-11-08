@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>AMG-Sentinel - Inventario</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header>
+    <h1>Gestión de Inventario TI - VC Seguridad</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="inventario.html" class="active">Inventario</a>
+      <a href="mantenimiento.html">Mantenimientos</a>
+      <a href="index.html" style="color: var(--danger);">Salir</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <input type="text" class="form-control" style="width: 350px;" placeholder="Buscar por serial, marca o custodio...">
+        <div>
+          <button onclick="alert('Exportando listado completo a Excel (.xlsx)...')" class="btn btn-secondary">📊 Exportar Excel (.xlsx)</button>
+          <a href="nuevo-equipo.html" class="btn">+ Nuevo Equipo</a>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Serial / Código</th>
+            <th>Categoría</th>
+            <th>Marca / Modelo</th>
+            <th>Custodio Asignado</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>SR-88492</b></td>
+            <td>Laptop</td>
+            <td>HP ProBook 440 G8</td>
+            <td>Alvaro Muñoz</td>
+            <td><span class="badge badge-success">Asignado</span></td>
+            <td>
+              <a href="hoja-de-vida.html" class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">Ver PDF</a>
+              <a href="mantenimiento.html" class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">Mantenimiento</a>
+            </td>
+          </tr>
+          <tr>
+            <td><b>SR-10294</b></td>
+            <td>Servidor</td>
+            <td>Dell PowerEdge R740</td>
+            <td>Infraestructura TI</td>
+            <td><span class="badge badge-warning">En Mantenimiento</span></td>
+            <td>
+              <a href="hoja-de-vida.html" class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">Ver PDF</a>
+              <a href="mantenimiento.html" class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">Mantenimiento</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

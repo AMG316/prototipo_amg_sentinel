@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>AMG-Sentinel - Nuevo Equipo</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header>
+    <h1>Registro y Edición de Activo TI</h1>
+    <nav><a href="inventario.html" class="btn btn-secondary">Volver al Inventario</a></nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Formulario Modal: Alta de Activo Tecnológico</h2>
+      
+      <form action="inventario.html" onsubmit="alert('Equipo registrado exitosamente.');">
+        <div class="form-grid">
+          <div>
+            <h4 style="color: var(--primary); margin-bottom: 1rem;">1. Datos Administrativos</h4>
+            <div class="form-group"><label>Número de Serial / Placa</label><input type="text" class="form-control" value="SR-99201" required></div>
+            <div class="form-group"><label>Categoría</label><select class="form-control"><option>Laptop</option><option>Computador Escritorio</option><option>Servidor</option></select></div>
+            <div class="form-group"><label>Marca y Modelo</label><input type="text" class="form-control" placeholder="Ej. Lenovo ThinkPad L14"></div>
+            <div class="form-group"><label>Fecha de Compra</label><input type="date" class="form-control"></div>
+          </div>
+
+          <div>
+            <h4 style="color: var(--primary); margin-bottom: 1rem;">2. Especificaciones Técnicas</h4>
+            <div class="form-group"><label>Procesador (CPU)</label><input type="text" class="form-control" placeholder="Ej. AMD Ryzen 5 / Intel i7"></div>
+            <div class="form-group"><label>Memoria RAM</label><input type="text" class="form-control" placeholder="Ej. 16 GB DDR4"></div>
+            <div class="form-group"><label>Almacenamiento (Disco)</label><input type="text" class="form-control" placeholder="Ej. 512 GB SSD NVMe"></div>
+            <div class="form-group"><label>Custodio Asignado</label><input type="text" class="form-control" placeholder="Nombre del Empleado"></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; text-align: right;">
+          <a href="inventario.html" class="btn btn-secondary">Cancelar</a>
+          <button type="submit" class="btn">Guardar Activo TI</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

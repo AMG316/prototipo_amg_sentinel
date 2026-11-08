@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>AMG-Sentinel - Dashboard</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header>
+    <h1>Gestión de Inventario TI - AMG-Sentinel</h1>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="inventario.html">Inventario</a>
+      <a href="mantenimiento.html">Mantenimientos</a>
+      <a href="index.html" style="color: var(--danger);">Salir</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="grid-4">
+      <div class="card"><div class="kpi-title">Total Activos Registrados</div><div class="kpi-value">148</div></div>
+      <div class="card"><div class="kpi-title">Mantenimientos este Mes</div><div class="kpi-value" style="color: var(--warning);">12</div></div>
+      <div class="card"><div class="kpi-title">Garantías por Vencer</div><div class="kpi-value" style="color: var(--danger);">4</div></div>
+      <div class="card"><div class="kpi-title">Valor Total Inventario</div><div class="kpi-value">$185.000.000</div></div>
+    </div>
+
+    <div class="card" style="margin-top: 1rem;">
+      <h3>Resumen Operativo de Infraestructura</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Panel centralizado de control de activos TI, mantenimientos programados y disponibilidad del sistema en tiempo real.</p>
+      <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+        <a href="inventario.html" class="btn">Ir al Inventario Completo</a>
+        <a href="nuevo-equipo.html" class="btn btn-secondary">+ Registrar Nuevo Equipo</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
